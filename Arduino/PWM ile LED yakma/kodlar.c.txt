@@ -1,0 +1,15 @@
+#define potpin A0
+#define led 3
+int deger=0;
+
+void setup() {
+
+}
+
+void loop() {
+
+int deger = analogRead(potpin);
+deger = deger/4;
+analogWrite(led,deger);
+
+}
